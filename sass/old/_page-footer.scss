@@ -4,18 +4,8 @@
   padding-bottom: 60px;
 
   &__conteiner {
-    display: block;
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: baseline;
-    }
-  }
-  &--tablet {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-    }
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -23,12 +13,7 @@
   @extend %list;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    align-items: flex-start;
-  }
+  margin-top: 20px;
 
   &__item:not(:last-child) {
     margin-bottom: 9px;
@@ -57,17 +42,8 @@
 }
 
 .site-footer {
-  text-align: center;
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 165px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    text-align: start;
-    margin-left: 70px;
-  }
+  align-items: flex-start;
+  margin-left: 70px;
 }
 
 .footer-title {
@@ -78,30 +54,13 @@
   color: $secondary-text-color;
   margin-top: 0;
   margin-bottom: 20px;
-
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .follow {
-  text-align: center;
-
-  @media screen and (min-width: 1200px) {
-    text-align: start;
-    margin-left: auto;
-  }
+  margin-left: auto;
 
   &__form {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    @media screen and (min-width: 1200px) {
-      flex-direction: row;
-      align-items: baseline;
-    }
+    display: flex;
   }
   &__icon {
     width: 24px;
@@ -111,26 +70,15 @@
 }
 
 .follow__input {
-  width: 100%;
+  width: 358px;
   height: 50px;
   padding: 15px 16px;
-  margin-bottom: 20px;
-
+  margin-right: 12px;
   background-color: transparent;
   color: $secondary-text-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-    margin-bottom: 0;
-    margin-right: 12px;
-  }
 
   &::placeholder {
     font-family: $primary-font;

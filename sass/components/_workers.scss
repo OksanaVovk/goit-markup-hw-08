@@ -3,11 +3,43 @@
 
   &__list {
     @extend %list;
-    display: flex;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
+      margin-bottom: 0;
+    }
+  }
+
+  &__item:nth-child(2n + 1) {
+    @media screen and (min-width: 768px) {
+      margin-right: 30px;
+    }
+  }
+
+  &__item:nth-last-child(-n + 2) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -18,9 +50,14 @@
   overflow: hidden;
 
   &__content {
-    padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 24px;
 
     background-color: $bg-color;
+
+    @media screen and (min-width: 768px) {
+      padding: 30px 0px;
+    }
   }
 
   &__title {

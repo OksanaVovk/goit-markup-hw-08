@@ -11,7 +11,7 @@
   font-family: $primary-font;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   display: flex;
   align-items: center;
   text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .follow__button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
@@ -40,7 +40,7 @@
 
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.85;
   text-align: center;
   letter-spacing: 0.06em;
   color: $secondary-text-color;
