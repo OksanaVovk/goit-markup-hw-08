@@ -1,0 +1,90 @@
+.page-footer {
+  background-color: $footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__conteiner {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.contacts-footer {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.contacts-footer__link {
+  color: $footer-contacts-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &--place {
+    color: $secondary-text-color;
+    text-decoration: none;
+  }
+}
+
+.site-footer {
+  align-items: flex-start;
+  margin-left: 70px;
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.follow {
+  margin-left: auto;
+
+  &__form {
+    display: flex;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
+}
+
+.follow__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  color: $secondary-text-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
