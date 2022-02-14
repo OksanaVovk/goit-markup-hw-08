@@ -18,16 +18,62 @@
 <header class="page-header">
     <div class="conteiner main-nav">
         <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
+
+        <button type="button" class="menu-button" data-menu-button>
+            <svg width="40" height="40" aria-expanded="false" aria-controls="menu-conteiner"
+                aria-label="Переключатель мобыльного меню">
+                <use class="menu-button__icon menu-button__icon--menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+                <use class="menu-button__icon menu-button__icon--cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+        </button>
+        <div class="menu-conteiner" id="menu-conteiner" data-menu>
+            <nav>
+                <ul class="site-nav site-nav--mobile list">
+                    <li class="site-nav__item">
+                        <a href="./index.html"
+                            class="site-nav__link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts contacts--mobile list">
+
+                <li class="contacts__item contacts__item--mobile-phone"><a href="tel:+380961111111"
+                        class="contacts__link">
+                        <svg class="contacts__icon--smartphone">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="contacts__item contacts__item--mobile-mail">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg class="contacts__icon--envelope">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+             <ul class="social-site list">
+                 <li class="social-site__item"><a href="./index.html" class="social-site__link">Instagram</a></li>
+                 <li class="social-site__item"><a href="./portfolio.html" class="social-site__link">Twitter</a></li>
+                 <li class="social-site__item"><a href="" class="social-site__link">Facebook</a></li>
+                 <li class="social-site__item"><a href="" class="social-site__link">LinkedIn</a></li>
+             </ul>
+        </div>
+        <!-- навігація для планшетів та компюторів -->
+
         <nav>
-            <ul class="site-nav list">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+            <ul class="site-nav site-nav--main list">
+                <li class="site-nav__item"><a href="./index.html"
+                        class="site-nav__link">Студия</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="contacts list">
-            <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link"><svg class="contacts__icon--envelope">
+        <ul class="contacts contacts--main list">
+            <li class="contacts__item contacts__item--envelope">
+                <a href="mailto:info@devstudio.com" class="contacts__link">
+                    <svg class="contacts__icon--envelope">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com</a>
@@ -261,5 +307,6 @@
         </div>
     </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
