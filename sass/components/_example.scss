@@ -106,11 +106,15 @@
   }
 }
 .example-card__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0px;
   left: 0;
   height: 100%;
-  padding: 63px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
