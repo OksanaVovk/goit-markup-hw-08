@@ -1752,8 +1752,9 @@ img {
 
 .example-card__slide {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
+  height: 100%;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
