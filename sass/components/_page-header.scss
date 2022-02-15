@@ -95,19 +95,6 @@
   }
 }
 
-// .site-nav__link {
-//   font-family: $primary-font;
-//   text-decoration: none;
-//   font-weight: 500;
-//   font-size: 40px;
-//   line-height: 1.18;
-//   letter-spacing: 0.02em;
-//   @media screen and (min-width: 768px) {
-//     font-size: 14px;
-//     line-height: 1.14;
-//   }
-// }
-
 .contacts--main {
   display: none;
 
@@ -196,14 +183,10 @@
 }
 
 .contacts__item--mobile-mail {
-  font-size: 24px;
-  line-height: 1.17;
   padding-bottom: 64px;
 }
 
 .contacts__item--mobile-phone {
-  font-size: 34px;
-  line-height: 1.18;
   padding-bottom: 32px;
 }
 
@@ -222,6 +205,16 @@
     font-size: 14px;
     line-height: 1.14;
   }
+}
+.contacts__link--mobile-mail {
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.contacts__link--mobile-phone {
+  font-size: 34px;
+  line-height: 1.18;
+  color: $accent-color;
 }
 
 .social-site {

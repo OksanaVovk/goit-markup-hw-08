@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +20,7 @@
     <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
    
     <button type="button" class="menu-button" data-menu-button>
-        <svg width="40" height="40" aria-expanded="false" aria-controls="menu-conteiner"
-            aria-label="Переключатель мобыльного меню">
+        <svg width="40" height="40" aria-expanded="false" aria-controls="menu-conteiner" aria-label="Переключатель мобыльного меню" role="button">
             <use class="menu-button__icon menu-button__icon--menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
             <use class="menu-button__icon menu-button__icon--cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
         </svg>
@@ -37,14 +35,14 @@
         </nav>
         <ul class="contacts contacts--mobile list">
             
-            <li class="contacts__item contacts__item--mobile-phone"><a href="tel:+380961111111" class="contacts__link">
+            <li class="contacts__item contacts__item--mobile-phone"><a href="tel:+380961111111" class="contacts__link contacts__link--mobile-phone">
                     <svg class="contacts__icon--smartphone">
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                     </svg>
                     +38 096 111 11 11</a>
             </li>
             <li class="contacts__item contacts__item--mobile-mail">
-                <a href="mailto:info@devstudio.com" class="contacts__link">
+                <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--mobile-mail">
                     <svg class="contacts__icon--envelope">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
                     </svg>
@@ -200,7 +198,12 @@
         <ul class="list work__list">
             <li class="work__item">
                 <div class="work__card">
-                <img src="./images/img1.jpg" alt="Человек работает за компьютером" width="370"/>
+                    <img
+                    srcset="./images/work1-370.jpg 1x, ./images/work1-740.jpg 2x"
+                    src="./images/work1-370.jpg"
+                    alt="Человек работает за компьютером"
+                    width="370" 
+                    />
                 <div class="work__discription">
                     <p class="work__text">Десктопные приложения</p>
                 </div>
@@ -208,7 +211,12 @@
             </li>
             <li class="work__item">
                 <div class="work__card">
-                <img src="./images/img2.jpg" alt="Человек работает с телефоном" width="370"/>
+                <img
+                srcset="./images/work2-370.jpg 1x, ./images/work2-740.jpg 2x"
+                src="./images/work2-370.jpg"
+                alt="Человек работает с телефоном"
+                width="370"
+                />
                 <div class="work__discription">
                     <p class="work__text">Мобильные приложения</p>
                 </div>
@@ -216,7 +224,12 @@
             </li>
             <li class="work__item">
                 <div class="work__card">
-                <img src="./images/img3.jpg" alt="Человек работает за планшетом" width="370"/>
+                <img
+                srcset="./images/work3-370.jpg 1x, ./images/work3-740.jpg 2x"
+                src="./images/work3-370.jpg"
+                alt="Человек работает за планшетом"
+                width="370"
+                />
                 <div class="work__discription">
                     <p class="work__text">Дизайнерские решения</p>
                 </div>
@@ -232,7 +245,15 @@
         <ul class="list workers__list">
           <li class="workers__item">
                 <div class="workers-card">
-                <img src="./images/img4.jpg" alt="Фотография Игоря" width="270" />
+                <picture>
+                    <source srcset="./images/worker1-270.jpg 1x, ./images/worker1-540.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/worker1-354.jpg 1x, ./images/worker1-708.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/worker1-450.jpg 1x, ./images/worker1-900.jpg 2x"
+                    media="(max-width: 768px)" />
+                    <img src="./images/worker1-354.jpg" alt="Фотография Игоря" />
+                </picture>
                 <div class="workers-card__content">
                 <h3 class="workers-card__title">Игорь Демьяненко</h3>
                 <p lang="en" class="workers-card__text">Product Designer</p>
@@ -272,7 +293,15 @@
             </li>
             <li class="workers__item">
                 <div class="workers-card">
-                <img src="./images/img5.jpg" alt="Фотография Ольги" width="270" /> 
+                    <picture>
+                        <source srcset="./images/worker2-270.jpg 1x, ./images/worker2-540.jpg 2x"
+                        media="(min-width: 1200px)" />
+                        <source srcset="./images/worker2-354.jpg 1x, ./images/worker2-708.jpg 2x"
+                        media="(min-width: 768px)" />
+                        <source srcset="./images/worker2-450.jpg 1x, ./images/worker2-900.jpg 2x"
+                        media="(max-width: 768px)" />
+                        <img src="./images/worker2-354.jpg" alt="Фотография Ольги" /> 
+                    </picture>
                 <div class="workers-card__content">
                 <h3 class="workers-card__title">Ольга Репина</h3>
                 <p lang="en" class="workers-card__text">Frontend Developer</p>
@@ -311,7 +340,15 @@
             </li>
             <li class="workers__item">
                 <div class="workers-card">
-                <img src="./images/img6.jpg" alt="Фотография Николая" width="270" />
+                <picture>
+                    <source srcset="./images/worker3-270.jpg 1x, ./images/worker3-540.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/worker3-354.jpg 1x, ./images/worker3-708.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/worker3-450.jpg 1x, ./images/worker3-900.jpg 2x"
+                    media="(max-width: 768px)" />
+                    <img src="./images/worker3-354.jpg" alt="Фотография Николая" />
+                </picture>
                 <div class="workers-card__content">
                 <h3 class="workers-card__title">Николай Тарасов</h3>
                 <p lang="en" class="workers-card__text">Marketing</p>
@@ -350,7 +387,15 @@
             </li>
             <li class="workers__item">
                 <div class="workers-card">
-                <img src="./images/img7.jpg" alt="Фотография Михаила" width="270" />
+                <picture>
+                    <source srcset="./images/worker4-270.jpg 1x, ./images/worker4-540.jpg 2x"
+                    media="(min-width: 1200px)" />
+                    <source srcset="./images/worker4-354.jpg 1x, ./images/worker4-708.jpg 2x"
+                    media="(min-width: 768px)" />
+                    <source srcset="./images/worker4-450.jpg 1x, ./images/worker4-900.jpg 2x"
+                    media="(max-width: 768px)" />
+                    <img src="./images/worker4-354.jpg" alt="Фотография Михаила" />
+                </picture>
                 <div class="workers-card__content">
                 <h3 class="workers-card__title">Михаил Ермаков</h3>
                 <p lang="en" class="workers-card__text">UI Designer</p>

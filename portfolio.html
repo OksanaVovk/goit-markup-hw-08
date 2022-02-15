@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +20,7 @@
 
         <button type="button" class="menu-button" data-menu-button>
             <svg width="40" height="40" aria-expanded="false" aria-controls="menu-conteiner"
-                aria-label="Переключатель мобыльного меню">
+                aria-label="Переключатель мобыльного меню" role="button">
                 <use class="menu-button__icon menu-button__icon--menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
                 <use class="menu-button__icon menu-button__icon--cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
             </svg>
@@ -102,7 +101,15 @@
             <li class="example__item">
                  <a href="" class="example__link">
                     <div class="example-card">
-                        <img src="./images/portfolio1.jpg" alt="Фотография веб-сайта" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio1-370.jpg 1x, ./images/portfolio1-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio1-354.jpg 1x, ./images/portfolio1-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio1-450.jpg 1x, ./images/portfolio1-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio1-354.jpg" alt="Фотография веб-сайта" />
+                        </picture>
                         <div class="example-card__slide">
                             <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -118,7 +125,16 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio2.jpg" alt="Два баскетболиста" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio2-370.jpg 1x, ./images/portfolio2-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio2-354.jpg 1x, ./images/portfolio2-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio2-450.jpg 1x, ./images/portfolio2-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio2-354.jpg" alt="Два баскетболиста" />
+                        </picture>
+                  
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -133,7 +149,15 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio3.jpg" alt="Логотип ресторана" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio3-370.jpg 1x, ./images/portfolio3-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio3-354.jpg 1x, ./images/portfolio3-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio3-450.jpg 1x, ./images/portfolio3-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio3-354.jpg" alt="Логотип ресторана" />
+                        </picture>
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -148,7 +172,15 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio4.jpg" alt="Наушники" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio4-370.jpg 1x, ./images/portfolio4-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio4-354.jpg 1x, ./images/portfolio4-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio4-450.jpg 1x, ./images/portfolio4-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio4-354.jpg" alt="Наушники" />
+                        </picture>
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -163,7 +195,15 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio5.jpg" alt="Две коробки" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio5-370.jpg 1x, ./images/portfolio5-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio5-354.jpg 1x, ./images/portfolio5-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio5-450.jpg 1x, ./images/portfolio5-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio5-354.jpg" alt="Две коробки" />
+                        </picture>
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -178,7 +218,15 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio6.jpg" alt="Монитор" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio6-370.jpg 1x, ./images/portfolio6-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio6-354.jpg 1x, ./images/portfolio6-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio6-450.jpg 1x, ./images/portfolio6-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio6-354.jpg" alt="Монитор" />
+                        </picture>
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -193,7 +241,15 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio7.jpg" alt="Журнал" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio7-370.jpg 1x, ./images/portfolio7-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio7-354.jpg 1x, ./images/portfolio7-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio7-450.jpg 1x, ./images/portfolio7-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio7-354.jpg" alt="Журнал" />
+                        </picture>
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -208,7 +264,15 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio8.jpg" alt="Илюстрацыя бирки" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio8-370.jpg 1x, ./images/portfolio8-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio8-354.jpg 1x, ./images/portfolio8-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio8-450.jpg 1x, ./images/portfolio8-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio8-354.jpg" alt="Илюстрацыя бирки" />
+                        </picture>
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -223,7 +287,15 @@
             <li class="example__item">
                 <a href="" class="example__link">
                     <div class="example-card">
-                    <img src="./images/portfolio9.jpg" alt="Ноутбук" width="370">
+                        <picture>
+                            <source srcset="./images/portfolio9-370.jpg 1x, ./images/portfolio9-740.jpg 2x"
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio9-354.jpg 1x, ./images/portfolio9-708.jpg 2x"
+                            media="(min-width: 768px)" />
+                            <source srcset="./images/portfolio9-450.jpg 1x, ./images/portfolio9-900.jpg 2x"
+                            media="(max-width: 768px)" />
+                            <img src="./images/portfolio9-354.jpg" alt="Ноутбук" />
+                        </picture>
                     <div class="example-card__slide">
                         <p class="example-card__text-slide">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
