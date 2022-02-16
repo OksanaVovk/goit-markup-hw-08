@@ -129,7 +129,24 @@
     }
 
     @media screen and (min-width: 1200px) {
+      padding: 32px 0;
+    }
+  }
+
+  &__link--envelope {
+    @media screen and (min-width: 768px) {
+      padding-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
       padding-top: 32px;
+    }
+  }
+
+  &__link--smartphone {
+    @media screen and (min-width: 768px) {
+      padding-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
       padding-bottom: 32px;
     }
   }
@@ -175,10 +192,10 @@
 
 .contacts__item--envelope {
   @media screen and (min-width: 768px) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
